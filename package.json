@@ -1,0 +1,12 @@
+{
+  "name": "normalize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^0.18.0",
+    "superagent": "^0.21.0"
+  }
+}
