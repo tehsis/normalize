@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "author": "",
+  "author": "Pablo Terradillos <tehsis@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "cheerio": "^0.18.0",
