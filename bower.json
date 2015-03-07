@@ -1,7 +1,7 @@
 {
-  "name": "normalize",
+  "name": "normalize-strings",
   "main": "normalize.js",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "homepage": "https://github.com/tehsis/normalize",
   "authors": [
     "Pablo Terradillos <tehsis@gmail.com>"

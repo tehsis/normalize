@@ -1,4 +1,4 @@
 {
-  "name": "normalize",
+  "name": "normalize-strings",
   "scripts": ["normalize.js"]
 }
