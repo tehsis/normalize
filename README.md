@@ -1,7 +1,6 @@
 # Normalize
 
 Normalize a string with utf-8 characters.
-Charmap used was scrapped from http://unicode.org/charts/charindex.html
 
 ```js
 # Used as a global variable
@@ -25,8 +24,8 @@ function(n) {
 
 # How it works?
 
-Normalize is based on https://github.com/django/django/blob/master/django/contrib/admin/static/admin/js/urlify.js#L122 but supporting a
-larger character's map parsed from http://unicode.org/charts/charindex.html
+Normalize is based on [Django's urlify](https://github.com/django/django/blob/master/django/contrib/admin/static/admin/js/urlify.js#L122) but supporting a
+larger character's map parsed from [http://unicode.org/charts/charindex.html]
 
 # Why?
 
