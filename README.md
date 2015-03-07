@@ -29,6 +29,6 @@ larger character's map parsed from [http://unicode.org/charts/charindex.html]
 
 # Why?
 
-JS compares strings according to the utf-8 code of each characters. This means, for example, that õ comes after z (i.e. 'õ' > 'z' === true)
+JS _compares strings according to the utf-8 code of each character_. This means, for example, that *õ comes after z* (i.e. 'õ' > 'z' === true)
 and this causes disasters when sorting strings. With normalize, you can correctly fix this issue.
-Now you have available `String.prototype.localCompare` which solve this issue, but is not yet supported on some browsers (i.e. IE10 and below).
+Althought you have available `String.prototype.localCompare` which solve this issue, but is not yet supported on some browsers (i.e. IE10 and below).
