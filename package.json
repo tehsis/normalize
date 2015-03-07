@@ -1,6 +1,6 @@
 {
-  "name": "normalize",
-  "version": "0.0.2",
+  "name": "normalize-strings",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "author": "Pablo Terradillos <tehsis@gmail.com>",
