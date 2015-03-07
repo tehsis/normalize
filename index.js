@@ -11,11 +11,11 @@
 } (typeof window !== 'undefined' ? window : this, function (window, document) {
   var charmap = require('./charmap');
 
-  var regex = new RegExp('[' + Object.keys(charmap).join(' ') + ']');
+  var regex = new RegExp('[' + Object.keys(charmap).join(' ') + ']', 'g');
 
   function normalize(str) {
-    return str.replace(regex, function() {
-      return charmap[charToReplace];
+    return str.replace(regex, function(charToReplace) {
+      return charmap[charToReplace] || charToReplace;
     });
   }
 
