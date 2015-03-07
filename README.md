@@ -4,6 +4,18 @@ Normalize a string with utf-8 characters.
 
 # Usage
 
+Download: (normalize.js)[https://github.com/tehsis/normalize/blob/master/normalize.js] or [normalize.min.js](https://github.com/tehsis/normalize/blob/master/normalize.min.js)
+
+```
+$npm install normalize --save
+```
+
+or
+
+```
+$bower install normalize --save
+```
+
 Just pass the string you want to *normalize* as an argument
 
 ```javascript
