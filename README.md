@@ -2,20 +2,25 @@
 
 Normalize a string with utf-8 characters.
 
-```js
-# Used as a global variable
+# Usage
+
+Just pass the string you want to *normalize* as an argument
+
+```javascript
 console.log(normalize('Åland')) // Aland
 ```
 
-```js
-# Used as commonjs module
+You can import it as a commonJS module
+
+```javascript
 var n = require('normalize');
 
 console.log(n('Åland')) // Aland
 ```
 
-```js
-# Used as AMD module
+or use it as AMD
+
+```javascript
 define(['normalize'],
 function(n) {
   console.log(n('Åland')) // Aland
