@@ -16,7 +16,7 @@ or
 $bower install normalize --save
 ```
 
-Just pass the string you want to *normalize* as an argument
+Just use the string you want to *normalize* as argument
 
 ```javascript
 console.log(normalize('Åland')) // Aland
@@ -30,7 +30,7 @@ var n = require('normalize');
 console.log(n('Åland')) // Aland
 ```
 
-or use it as AMD
+or as an AMD module
 
 ```javascript
 define(['normalize'],
@@ -41,11 +41,10 @@ function(n) {
 
 # How it works?
 
-Normalize is based on [Django's urlify](https://github.com/django/django/blob/master/django/contrib/admin/static/admin/js/urlify.js#L122) but supporting a
-larger character's map parsed from [http://unicode.org/charts/charindex.html]
+Normalize is based on [Django's urlify](https://github.com/django/django/blob/master/django/contrib/admin/static/admin/js/urlify.js#L122) scrapping character's map from [http://unicode.org/charts/charindex.html]
 
 # Why?
 
 JS _compares strings according to the utf-8 code of each character_. This means, for example, that *õ comes after z* (i.e. 'õ' > 'z' === true)
-and this causes disasters when sorting strings. With normalize, you can correctly fix this issue.
-Althought you have available `String.prototype.localCompare` which solve this issue, but is not yet supported on some browsers (i.e. IE10 and below).
+and this causes disasters when sorting strings. With normalize, you can correctly fix this.
+Althought you have available `String.prototype.localCompare` which solve it, it is not yet supported on some browsers (i.e. IE10 and below).
