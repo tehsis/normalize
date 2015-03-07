@@ -4,7 +4,7 @@ Normalize a string with utf-8 characters.
 
 # Usage
 
-Download: (normalize.js)[https://github.com/tehsis/normalize/blob/master/normalize.js] or [normalize.min.js](https://github.com/tehsis/normalize/blob/master/normalize.min.js)
+Download: [normalize.js](https://github.com/tehsis/normalize/blob/master/normalize.js) or [normalize.min.js](https://github.com/tehsis/normalize/blob/master/normalize.min.js)
 
 ```
 $npm install normalize --save
