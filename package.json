@@ -1,10 +1,13 @@
 {
   "name": "normalize",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "author": "Pablo Terradillos <tehsis@gmail.com>",
-  "license": "ISC",
+  "contributors": [
+    "Cristian Douce"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "cheerio": "^0.18.0",
     "superagent": "^0.21.0"
