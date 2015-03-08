@@ -1,4 +1,4 @@
-# Normalize
+# Normalize ![travis](https://travis-ci.org/tehsis/webplanningcards.svg?branch=master)
 
 Normalize a string with utf-8 characters.
 
