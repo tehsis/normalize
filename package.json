@@ -1,12 +1,15 @@
 {
   "name": "normalize-strings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "author": "Pablo Terradillos <tehsis@gmail.com>",
   "contributors": [
     "Cristian Douce"
   ],
+  "scripts": {
+    "test": "node ./test/normalize.test.js"
+  },
   "license": "MIT",
   "devDependencies": {
     "cheerio": "^0.18.0",
