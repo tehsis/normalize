@@ -3,9 +3,11 @@
     define(function() {
       return factory(global, global.document);
     });
+  } else if (typeof module !== 'undefined' && module.exports) {
+    module.exports = factory(global, global.document);
   } else {
       global.normalize = factory(global, global.document);
-  }
+  } 
 } (typeof window !== 'undefined' ? window : this, function (window, document) {
   var charmap = require('./charmap');
 

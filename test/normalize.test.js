@@ -7,7 +7,7 @@ Object.keys(characters_map).forEach(function(key) {
 
 var assert = require('assert');
 console.time('duration');
-var normalize = require('../normalize');
+var normalize = require('../index');
 special_characters.forEach(function(value, index) {
   var special_char = String.fromCharCode(value);
   assert(normalize(special_char) === characters_array[index], 'The character ' + special_char + ' was normalized');
