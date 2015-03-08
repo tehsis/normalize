@@ -15,7 +15,7 @@ request.get('http://unicode.org/charts/charindex.html')
    var character = character_title.charAt(0);
 
    if(character_title.charAt(1) === ' ' || character_title.charAt(1) === ',') {
-    map[code.charCodeAt(0)] = character;
+    map[code.toUpperCase().charCodeAt(0)] = character.toUpperCase();
     map[(code.toLowerCase()).charCodeAt(0)] = character.toLowerCase();
    }
  });
