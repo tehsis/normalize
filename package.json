@@ -1,6 +1,6 @@
 {
   "name": "normalize-strings",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "author": "Pablo Terradillos <tehsis@gmail.com>",
@@ -15,6 +15,10 @@
     "unicode",
     "strings"
   ],
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/tehsis/normalize"
+  },
   "license": "MIT",
   "devDependencies": {
     "cheerio": "^0.18.0",
