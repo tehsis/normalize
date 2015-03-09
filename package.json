@@ -10,6 +10,11 @@
   "scripts": {
     "test": "node ./test/normalize.test.js"
   },
+  "keywords": [
+    "utf-8",
+    "unicode",
+    "strings"
+  ],
   "license": "MIT",
   "devDependencies": {
     "cheerio": "^0.18.0",
