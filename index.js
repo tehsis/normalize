@@ -9,15 +9,22 @@
       global.normalize = factory(global, global.document);
   }
 } (typeof window !== 'undefined' ? window : this, function (window, document) {
-  var charmap = require('./charmap');
-
-  var regex = new RegExp('[' + Object.keys(charmap).map(function(code) {return String.fromCharCode(code); }).join(' ') + ']', 'g');
+  var charmap = require('./charmap'),
+    regex = null;
 
   function normalize(str, customMap) {
+
     charmap = customMap || charmap;
+    if(!regex)
+        regex = new buildRegExp(charmap);
+
     return str.replace(regex, function(charToReplace) {
       return charmap[charToReplace.charCodeAt(0)] || charToReplace;
     });
+  }
+
+  function buildRegExp(charmap){
+      return new RegExp('[' + Object.keys(charmap).map(function(code) {return String.fromCharCode(code); }).join(' ') + ']', 'g');
   }
 
   return normalize;
