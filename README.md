@@ -7,13 +7,13 @@ Normalize a string with utf-8 characters.
 Download: [normalize.js](https://github.com/tehsis/normalize/blob/master/normalize.js) or [normalize.min.js](https://github.com/tehsis/normalize/blob/master/normalize.min.js)
 
 ```
-$npm install normalize --save
+$npm install normalize-strings --save
 ```
 
 or
 
 ```
-$bower install normalize --save
+$bower install normalize-strings --save
 ```
 
 Just use the string you want to *normalize* as argument
