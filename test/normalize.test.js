@@ -1,6 +1,6 @@
 var characters_map = require('../charmap.json');
 var special_characters = Object.keys(characters_map);
-var characters_array = []; 
+var characters_array = [];
 Object.keys(characters_map).forEach(function(key) {
  characters_array.push(characters_map[key]);
 });
