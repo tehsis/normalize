@@ -11,14 +11,17 @@
 } (typeof window !== 'undefined' ? window : this, function (window, document) {
   var charmap = require('./charmap');
   var regex = null;
+  var current_charmap;
+  var old_charmap;
 
   function normalize(str, custom_charmap) {
-    var current_charmap = custom_charmap || charmap;
+    old_charmap = current_charmap;
+    current_charmap = custom_charmap || charmap;
 
-    regex = regex || buildRegExp(current_charmap);
+    regex = (regex && old_charmap === current_charmap) ? regex : buildRegExp(current_charmap);
 
     return str.replace(regex, function(charToReplace) {
-      return charmap[charToReplace.charCodeAt(0)] || charToReplace;
+      return current_charmap[charToReplace.charCodeAt(0)] || charToReplace;
     });
   }
 
