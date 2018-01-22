@@ -9,7 +9,7 @@
       global.normalize = factory(global, global.document);
   }
 } (typeof window !== 'undefined' ? window : this, function (window, document) {
-  var charmap = require('./charmap');
+  var charmap = require('./charmap.json');
   var regex = null;
   var current_charmap;
   var old_charmap;

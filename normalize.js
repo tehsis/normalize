@@ -12,7 +12,7 @@ module.exports={"105":"i","192":"A","193":"A","194":"A","195":"A","196":"A","197
       global.normalize = factory(global, global.document);
   }
 } (typeof window !== 'undefined' ? window : this, function (window, document) {
-  var charmap = require('./charmap');
+  var charmap = require('./charmap.json');
   var regex = null;
 
   function normalize(str, custom_charmap) {
