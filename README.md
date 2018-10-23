@@ -25,7 +25,7 @@ console.log(normalize('Åland')) // Aland
 You can import it as a commonJS module
 
 ```javascript
-var n = require('normalize');
+var n = require('normalize-strings');
 
 console.log(n('Åland')) // Aland
 ```
