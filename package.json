@@ -16,13 +16,13 @@
     "unicode",
     "strings"
   ],
-  "repository": { 
-    "type" : "git",
-    "url" : "https://github.com/tehsis/normalize"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tehsis/normalize"
   },
   "license": "MIT",
   "devDependencies": {
-    "cheerio": "^0.18.0",
-    "superagent": "^0.21.0"
+    "cheerio": "^1.0.0-rc.5",
+    "superagent": "^6.1.0"
   }
 }
