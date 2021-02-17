@@ -1,4 +1,4 @@
-var charmap = require('./charmap');
+var charmap = require('./charmap.json');
 
 var supported_chars = [];
 
